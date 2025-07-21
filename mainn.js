@@ -13,9 +13,9 @@ const state = {
 function loadSubjects() {
     fetch('https://mayankvermavns.github.io/myquiz/subjectss.json')
         .then(res => res.json())
-        .then(subjectss => {
+        .then(subjects => {
             screen.innerHTML = '<h2>select subject</h2>';
-            subjectss.forEach(sub => {
+            subjects.forEach(sub => {
                 const btn = document.createElement('button');
                 btn.textContent = sub.subjectName;
                 btn.onclick = () => {
@@ -32,12 +32,12 @@ function loadQuizzes() {
     fetch(state.quizListUrl)
         .then(res => res.json())
         .then(quizzes => {
-            screen.innerHTML = `<h2>${state.subjectName}:select quize</h2>`;
+            screen.innerHTML = `<h2>${state.subjectName}:Select Quiz</h2>`;
             quizzes.forEach(quiz => {
                 const btn = document.createElement('button');
                 btn.textContent = quiz.quizName;
                 btn.onclick = () => {
-                    state.quizListUrl = quiz.quizListUrl;
+                    state.quizUrl = quiz.quizUrl;
                     state.quizName = quiz.quizName;
                     loadQuizQuestions()
                 };
@@ -64,7 +64,7 @@ function showQuestion() {
         const btn = document.createElement('button');
         btn.textContent = opt;
         btn.onclick = () => {
-            if (opt === q.answere) state.score++;
+            if (opt === q.answer) state.score++;
             state.currentIndex++;
             if (state.currentIndex < state.questions.length) {
                 showQuestion();
@@ -79,10 +79,12 @@ function showQuestion() {
 
 function showResult() {
     screen.innerHTML = `
-    <h>Quiz Complete!</h2>
+    <h>Quiz Completed!</h2>
     <p><strong>${state.quizName}</strong></p>
-    <p>your score: ${state.score}/${state.questions.length}</p>
+    <p>Your score: ${state.score}/${state.questions.length}</p>
     <button onclick="loadSubjects()">Restart</button
     `;
 }
+
+
 loadSubjects();
