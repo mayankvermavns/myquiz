@@ -1,0 +1,112 @@
+[
+    {
+        "qno": "199",
+        "question": "What is the value of 7+8*2 ?",
+        "option": [
+            "30",
+            "23",
+            "22",
+            "31"
+        ],
+        "answere": "23"
+    },
+    {
+        "qno": "2",
+        "question": "What is the value of 3+25 ?",
+        "option": [
+            "28",
+            "58",
+            "23",
+            "29"
+        ],
+        "answere": "28"
+    },
+    {
+        "qno": "3",
+        "question": "What is 15% of 200 ?",
+        "option": [
+            "25",
+            "30",
+            "35",
+            "40"
+        ],
+        "answere": "30"
+    },
+    {
+        "qno": "4",
+        "question": "Which number is prime number ?",
+        "option": [
+            "4",
+            "9",
+            "11",
+            "21"
+        ],
+        "answere": "11"
+    },
+    {
+        "qno": "5",
+        "question": "What is the perimeter of a square of side 6 cm ?",
+        "option": [
+            "24 cm",
+            "18 cm",
+            "36 cm",
+            "30 cm"
+        ],
+        "answere": "24 cm"
+    },
+    {
+        "qno": "6",
+        "question": "How many sides does a hexagon have ?",
+        "option": [
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "answere": "6"
+    },
+    {
+        "qno": "7",
+        "question": "If the area of a rectanble is 48 and the length is 8, what is the width ?",
+        "option": [
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "answere": "6"
+    },
+    {
+        "qno": "8",
+        "question": "If 5x=30,what is x ?",
+        "option": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "answere": "6"
+    },
+    {
+        "qno": "9",
+        "question": "What is the cube of 3 ?",
+        "option": [
+            "6",
+            "9",
+            "27",
+            "18"
+        ],
+        "answere": "27"
+    },
+    {
+        "qno": "10",
+        "question": "What is the HCF of 12 and 18 ?",
+        "option": [
+            "2",
+            "3",
+            "6",
+            "9"
+        ],
+        "answere": "6"
+    }
+]
