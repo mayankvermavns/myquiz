@@ -11,7 +11,7 @@ const state = {
 };
 
 function loadSubjects() {
-    fetch('https://mayankvermavns.github.io/myquiz/subjectss.json')
+    fetch('https://mayankvermavns.github.io/myquiz/subjects.json')
         .then(res => res.json())
         .then(subjects => {
             screen.innerHTML = '<h2>select subject</h2>';
