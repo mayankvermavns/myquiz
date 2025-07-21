@@ -49,8 +49,8 @@ function loadQuizzes() {
 function loadQuizQuestions() {
     fetch(state.quizUrl)
         .then(res => res.json())
-        .then(questions => {
-            state.questions = questions;
+        .then(question => {
+            state.question = question;
             state.currentIndex = 0;
             state.score = 0;
             showQuestion();
