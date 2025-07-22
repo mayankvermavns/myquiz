@@ -50,24 +50,24 @@ function loadQuizQuestions() {
     fetch(state.quizUrl)
         .then(res => res.json())
         .then(questions => {
-            state.questions= questions;
+            state.questions = questions;
             state.currentIndex = 0;
             state.score = 0;
-            showQuestions();
+            showQuestion();
         });
 }
 
-function showQuestions() {
+function showQuestion() {
     const q = state.questions[state.currentIndex];
-    screen.innerHTML = `<h2>Q${state.currentIndex + 1}: ${q.questions}</h2>`;
+    screen.innerHTML = `<h2>Q${state.currentIndex + 1}: ${q.question}</h2>`;
     q.options.forEach(opt => {
         const btn = document.createElement('button');
         btn.textContent = opt;
         btn.onclick = () => {
-            if (opt === q.answere) state.score++;
+            if (opt === q.answer) state.score++;
             state.currentIndex++;
             if (state.currentIndex < state.questions.length) {
-                showQuestions();
+                showQuestion();
             } else {
                 showResult();
             }
@@ -78,11 +78,12 @@ function showQuestions() {
 
 function showResult() {
     screen.innerHTML = `
-    <h2> Quiz Completed!</h2>
+    <h2>🎉 Quiz Completed!</h2>
     <p><strong>${state.quizName}</strong></p>
     <p>Your Score: ${state.score}/${state.questions.length}</p>
     <button onclick="loadSubjects()">Restart</button>
   `;
 }
 
+// Start the app
 loadSubjects();
