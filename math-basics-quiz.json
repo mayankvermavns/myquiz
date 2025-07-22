@@ -60,7 +60,7 @@
         "answere": "180°"
     },
     {
-        "question": "Which number is an even number?",
+        "questions": "Which number is an even number?",
         "options": [
             "9",
             "16",
