@@ -67,7 +67,7 @@ function showQuestions() {
             if (opt === q.answere) state.score++;
             state.currentIndex++;
             if (state.currentIndex < state.questions.length) {
-                showQuestion();
+                showQuestions();
             } else {
                 showResult();
             }
