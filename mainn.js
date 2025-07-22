@@ -5,7 +5,7 @@ const state = {
     quizUrl: '',
     subjectName: '',
     quizName: '',
-    question: [],
+    questions: [],
     currentIndex: 0,
     score: 0,
 };
@@ -49,8 +49,8 @@ function loadQuizzes() {
 function loadQuizQuestions() {
     fetch(state.quizUrl)
         .then(res => res.json())
-        .then(question => {
-            state.question = question;
+        .then(questions => {
+            state.questions= questions;
             state.currentIndex = 0;
             state.score = 0;
             showQuestions();
@@ -58,15 +58,15 @@ function loadQuizQuestions() {
 }
 
 function showQuestions() {
-    const q = state.question[state.currentIndex];
-    screen.innerHTML = `<h2>Q${state.currentIndex + 1}: ${q.question}</h2>`;
+    const q = state.questions[state.currentIndex];
+    screen.innerHTML = `<h2>Q${state.currentIndex + 1}: ${q.questions}</h2>`;
     q.options.forEach(opt => {
         const btn = document.createElement('button');
         btn.textContent = opt;
         btn.onclick = () => {
-            if (opt === q.answer) state.score++;
+            if (opt === q.answere) state.score++;
             state.currentIndex++;
-            if (state.currentIndex < state.question.length) {
+            if (state.currentIndex < state.questions.length) {
                 showQuestion();
             } else {
                 showResult();
@@ -80,7 +80,7 @@ function showResult() {
     screen.innerHTML = `
     <h2> Quiz Completed!</h2>
     <p><strong>${state.quizName}</strong></p>
-    <p>Your Score: ${state.score}/${state.question.length}</p>
+    <p>Your Score: ${state.score}/${state.questions.length}</p>
     <button onclick="loadSubjects()">Restart</button>
   `;
 }
