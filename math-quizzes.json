@@ -1,7 +1,7 @@
 [
-  {
-    "quizNo": 1,
-    "quizName": "Math Basics",
-    "quizUrl": "https://mayankvermavns.github.io/myquiz/math-basics-quiz.json"
-  }
+    {
+        "subjectNo": 1,
+        "subjectName": "Maths",
+        "quizListUrl": "https://mayankvermavns.github.io/myquiz/math-quizzes.json"
+    }
 ]
