@@ -84,6 +84,4 @@ function showResult() {
     <button onclick="loadSubjects()">Restart</button>
   `;
 }
-
-// Start the app
 loadSubjects();
