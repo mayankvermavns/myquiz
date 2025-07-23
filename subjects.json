@@ -8,5 +8,10 @@
         "subjectNo": 1,
         "subjectName": "Algebra",
         "quizListUrl": "https://mayankvermavns.github.io/myquiz/algebra-quizzes.json"
+    },
+    {
+        "subjectNo": 1,
+        "subjectName": "Algebra",
+        "quizListUrl": "https://mayankvermavns.github.io/myquiz/gk-quizzes.json"
     }
 ]
