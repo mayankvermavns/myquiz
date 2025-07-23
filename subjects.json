@@ -4,11 +4,9 @@
         "subjectName": "Maths",
         "quizListUrl": "https://mayankvermavns.github.io/myquiz/math-quizzes.json"
     },
-    [
-        {
-            "subjectNo": 1,
-            "subjectName": "Maths",
-            "quizListUrl": "https://mayankvermavns.github.io/myquiz/algebra-quizzes.json"
-        }
-    ]
+    {
+        "subjectNo": 1,
+        "subjectName": "Maths",
+        "quizListUrl": "https://mayankvermavns.github.io/myquiz/math-quizzes.json"
+    }
 ]
