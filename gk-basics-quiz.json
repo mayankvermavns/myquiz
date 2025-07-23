@@ -1,0 +1,102 @@
+[
+    {
+        "questions": "What is the capital of CANADA ?",
+        "options": [
+            "Toronto",
+            "Ottawa",
+            "Vancouver",
+            "Montreal"
+        ],
+        "answere": "Ottawa"
+    },
+    {
+        "questions": "Which river is known as the longest river in the world ?",
+        "options": [
+            "Amazon",
+            "Nil",
+            "Yangtze",
+            "Mississippi"
+        ],
+        "answere": "Nil"
+    },
+    {
+        "questions": "Who was the first President of India ?",
+        "options": [
+            "Jawaharlal Nehru",
+            "Rajendra Prashad",
+            "Sardar Patel",
+            "B.R.Ambedkar"
+        ],
+        "answere": "Rajendra Prashad"
+    },
+    {
+        "questions": " In which year did India gain independence ?",
+        "options": [
+            "1941",
+            "1947",
+            "1856",
+            "1987"
+        ],
+        "answere": "1947"
+    },
+    {
+        "questions": "Which planet is known as the Red Planet ?",
+        "options": [
+            "Mars",
+            "Venus",
+            "Jupiter",
+            "Saturn"
+        ],
+        "answere": "Mars"
+    },
+    {
+        "questions": "Who is known as the (Father of the Indian Constitution) ?",
+        "options": [
+            "Rajendra Prashad",
+            "Jawahar Lal Neharu",
+            "B.R.Ambedkar",
+            "Mahatma Gandhi"
+        ],
+        "answere": "B.R.Ambedkar"
+    },
+    {
+        "questions": "Which Article of the Indian Constitution deals with the Right to Education?",
+        "options": [
+            "Article 19",
+            "Article 21A",
+            "Article 25",
+            "Article 15"
+        ],
+        "answere": "Article 21A"
+    },
+    {
+        "questions": "Who is the current President of India (2025) ?",
+        "options": [
+            "Ram Nath Kovind",
+            " Pranab Mukherjee",
+            "Droupadi Murmu",
+            "Venkaiah Naidu"
+        ],
+        "answere": "Droupadi Murmu"
+    },
+    {
+        "questions": "Which Indian city recently hosted the G20 Summit ?",
+        "options": [
+            "New Delhi",
+            "Mumbai",
+            "lucknow",
+            "Bengaluru"
+        ],
+        "answere": "New Delhi"
+    },
+    {
+        "questions": "Mount Everest is located in which country ?",
+        "options": [
+            "India",
+            "Nepal",
+            "China",
+            "Bhutan"
+        ],
+        "answere": "Nepal"
+    }
+]
