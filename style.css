@@ -1,0 +1,73 @@
+ @keyframes move {
+     0% {
+         left: 0%;
+         top: 0%;
+     }
+
+     25% {
+
+         left: 94%;
+         top: 0%;
+     }
+
+     50% {
+         left: 94%;
+         top: 87.5%;
+     }
+
+     75% {
+         left: 0%;
+         top: 87.5%;
+     }
+
+     100% {
+         left: 0%;
+         top: 0%;
+     }
+ }
+
+ .Mayank {
+
+     position: absolute;
+     width: 75px;
+     height: 75px;
+     border-radius: 50%;
+     animation-name: move;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     height: 100vh;
+     overflow: hidden;
+     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+     font-family: 'Segoe UI', sans-serif;
+     position: relative;
+ }
+
+ h1 {
+     margin-top: 20px;
+     color:light blue;
+     font-size: 2.5rem;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ #screen {
+     width: 320px;
+     min-height: 150px;
+     border: 3px solid #fff;
+     background-color: rgba(255, 255, 255, 0.9);
+     margin-top: 20px;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+ }
+ button{
+    border-radius: 10px;
+    margin: 3%;
+    cursor: pointer;
+    
+ }
