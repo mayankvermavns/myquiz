@@ -78,7 +78,7 @@ function showQuestions() {
 
 function showResult() {
     screen.innerHTML = `
-    <h2> Quiz Completed!</h2>
+    <h2>🎉 Quiz Completed!</h2>
     <p><strong>${state.quizName}</strong></p>
     <p>Your Score: ${state.score}/${state.questions.length}</p>
     <button onclick="loadSubjects()">Restart</button>
